@@ -111,6 +111,14 @@ a:hover {
     background-image: url(DomZPapieruQuiz/images/2.PNG);
 }
 
+.przyjaciele {
+    background-image: url(FriendsQuiz/images/3.jpg);
+}
+
+.graOTron {
+    background-image: url(GameOfThronesQuiz/images/2.jpg);
+}
+
 @media(orientation: portrait) and (min-width: 360px) {
     h1 {
         font-size: 30px;
