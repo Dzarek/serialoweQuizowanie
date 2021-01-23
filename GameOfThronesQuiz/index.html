@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra o Tron Quiz</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="bstop"><i class="fas fa-volume-mute"></i></button>
+    <button id="bplay"><i class="fas fa-volume-up"></i></button>
+    <h1 class="home-name">GRA O TRON QUIZ</h1>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1>Sprawdź swoją wiedzę <br> z serialu Gra o Tron !</h1>
+            <div class="levels off">
+                <div class="levelBtn">
+                    <p>Wybierz Poziom</p>
+                    <a href="game.html" class="btn ">Łatwy</a>
+                    <a href="game2.html" class="btn ">Trudny</a>
+                    <button class="back btn ">Wróć</button>
+                </div>
+            </div>
+            <button class="btn chooseLevel">Nowa Gra</button>
+            <a href="highscores.html" class="btn" id="highscore-btn">Tablica wyników <i class="fas fa-crown"></i></a>
+            <a href="../index.html" class="btn menu">MENU SERIALI</a>
+        </div>
+    </div>
+    <script>
+        const snd = new Audio("game1.mp3");
+        snd.loop = true;
+        snd.autoplay = true;
+        document.getElementById("bstop").addEventListener('click', () => {
+            snd.pause()
+        })
+        document.getElementById("bplay").addEventListener('click', () => {
+            snd.play();
+        });
+        const levels = document.querySelector('.levels')
+        const chooseLevel = document.querySelector('.chooseLevel')
+        chooseLevel.addEventListener('click', () => {
+            levels.classList.remove('off')
+        })
+        const back = document.querySelector('.back')
+        back.addEventListener('click', () => {
+            levels.classList.add('off')
+        })
+    </script>
+</body>
+
+</html>
