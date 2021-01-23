@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    color: rgba(255, 255, 255, 0.74);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wrap {
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    top: 12vh;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+.seriale {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+
+}
+
+a {
+    margin: 40px 60px;
+    width: 30vh;
+    height: 30vh;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    transition: .8s;
+    cursor: pointer;
+    border: 3px solid rgba(110, 110, 110, 0.74);
+    line-height: 100%;
+
+}
+
+a p {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+a p:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+a:hover {
+    transform: scale(1.1);
+    color: transparent;
+    box-shadow: 0rem 0rem 1.4rem .5rem rgba(251, 253, 255, 0.6);
+}
+
+.ranczo {
+    background-image: url(RanczoQuiz/images/1.jpg);
+}
+
+.domZPapieru {
+    background-image: url(DomZPapieruQuiz/images/2.PNG);
+}
+
+@media(orientation: portrait) and (min-width: 360px) {
+    h1 {
+        font-size: 30px;
+        width: 100vw;
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 100vw;
+        top: 15vh;
+    }
+
+    .seriale {
+        margin-top: 6vh;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    a {
+        margin: 10px;
+        width: 38vw;
+        height: 38vw;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+@media(orientation: landscape) and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+        width: 100vw;
+
+    }
+
+    h2 {
+        font-size: 20px;
+        width: 100vw;
+        top: 15vh;
+    }
+
+    .seriale {
+        margin-top: 6vh;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    a {
+        margin: 10px;
+        width: 32vh;
+        height: 32vh;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
