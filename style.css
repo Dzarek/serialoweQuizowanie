@@ -119,6 +119,10 @@ a:hover {
     background-image: url(GameOfThronesQuiz/images/2.jpg);
 }
 
+.vikingowie {
+    background-image: url(VikingsQuiz/images/2.png);
+}
+
 @media(orientation: portrait) and (min-width: 360px) {
     h1 {
         font-size: 30px;
