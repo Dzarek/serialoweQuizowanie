@@ -9,7 +9,7 @@
 body {
     overflow: hidden;
     background-image: url('images/1.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     /* backdrop-filter: blur(1px); */
